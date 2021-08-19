@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation section */
+
+#navbar{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(92, 0, 0);
+  z-index: -1;
+  /* opacity: 0.9; */
+}
+.nav{
+    display: flex;
+}
+.item{
+    padding: 23px 24px;
+    list-style: none;
+}
+.item a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    background: url(../img/photo.jpg) no-repeat center/cover;
+    height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+#home::after{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    font-size: 3rem;
+ color: white;
+ text-align: center;
+}
+#home p{
+    font-size: 1.3rem;
+    color: white;
+ 
+}
+.btn{
+    color: rgb(163, 9, 9);
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid rgb(163, 9, 9);
+    border-radius: 23px;
+    padding: 6px 7px;
+}
+
+/* box section */
+
+.box{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box1,.box2{
+  border: 2px solid rgb(92, 0, 0);
+  padding: 13px 19px;
+  border-radius: 12px;
+}
+.box img{
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.box h1{
+    font-size: 1.5rem;
+    color: rgb(92, 0, 0);
+    text-transform: uppercase;
+}
+.box p{
+    font-size: 1.1rem;
+    line-height: 24px;
+}
+
+/* Services section */
+
+#services-container h1{
+   margin-top: 40px;
+   margin-bottom: 25px;
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 800;
+}
+#services-container hr{
+    width: 93px;
+    height: 4px;
+    margin-left: 48%;
+    background-color: rgb(92, 0, 0);
+    margin-bottom: 40px;
+}
+#services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 33px;
+    justify-content: center;
+}
+
+.gallery img{
+    height: 40vh;
+    width: 60vh;
+    box-shadow:  0 0 10px gray;
+}
+.gallery img:hover{
+    height: 38vh;
+    width: 58vh;
+    box-shadow: 0 0 11px gray;
+}
+
+/* Offer section */
+#offer{
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+#offer h1{
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-size: 3rem;
+    text-align: center;
+}
+.offerbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    grid-gap: 23px;
+    align-items: center;
+    margin: 23px; 
+}
+.offerimage{
+    box-shadow: 0 0 10px gray;
+    border-radius: 4px 23px 4px 23px;
+    padding: 12px;
+}
+.offerimage img{
+    height: 160px;
+    width: 180px;
+    float: left;
+    padding-right: 12px;
+}
+.offerimage h3{
+    color: orangered;
+    font-size: 1.2rem;
+}
+.offerimage h2{
+    font-size: 1.6rem;
+}
+.offerimage p{
+    color: rgb(61, 61, 61);
+    padding-top: 30px;
+}
+/* Overheads form travlers */
+.heard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 190px;
+}
+.heard h1{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.heard h2{
+    font-size: 2rem;
+    color: rgb(92, 0, 0);
+    text-align: center;
+}
+.heard h5{
+    font-size: 1rem;
+    text-align: center;
+    color: gray;
+    line-height: 33px;
+}
+.heard p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.para{
+    color:rgb(63, 62, 62);
+    line-height: 50px;
+}
+.place{
+    margin: 0 223px;
+}
+.place hr{
+    width: 50vw;
+    height: 4px;
+    margin-top: 37px;
+    background-color: rgb(92, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Top india destination */
+.topindia h1{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+}
+.top{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: center;
+    grid-gap: 23px;
+    align-items: center;
+}
+.india img{
+    height: 140px;
+    width: 140px;
+    border-radius: 90px;
+}
+.india h2,p{
+    text-align: center;
+}
+.india p{
+    color: gray;
+}
+
+/* Destination outside india section */
+
+#topoutside h1{
+    font-size: 3rem;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+.outside{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: center;
+    grid-gap: 23px;
+    align-items: center;
+}
+.outside img{
+    height: 140px;
+    width: 140px;
+    border-radius: 90px;
+}
+.outside h2,p{
+    text-align: center;
+}
+.outside p{
+    color: gray;
+}
+
+/* More cities  */
+.more{
+   margin: 45px 45px;
+    display: grid;
+    grid-template-columns: auto auto;
+   justify-content: space-around;
+}
+.more h1{
+  font-size: 2rem;
+  color: rgb(92, 0, 0);
+  text-align: center;
+  margin-bottom: 23px;
+}
+.list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 73px;
+}
+/* AppUsers section */
+
+.app{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+.app::after{
+    background-color: black;
+    background: url(../img/hotel.jpg) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+.app h1{
+    text-align: left;
+    font-size: 4rem;
+}
+.app p{
+ text-align: left;
+  font-size: 1.5rem;
+  line-height: 23px;
+}
+.app img{
+    margin-top: 40px;
+}
+.img1,.img2{
+    height: 55px;
+}
+.img3{
+    height: 120px;
+}
